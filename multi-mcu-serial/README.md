@@ -58,6 +58,12 @@ You will need to make sure that your Raspberry Pi user has permissions to "dial 
 sudo adduser pi dialout
 ```
 
+## Raspberry Pi B Revision 1 Notes
+Running Raspberry Pi OS: 32-bit Legacy (Buster)
+
+This older Raspberry Pi does not have `/dev/ttyS0`; the only serial port is `/dev/ttyAMA0/`, which is `serial0`
+
+Follow the same procedures as listed above, substituting `/dev/ttyS0` with `/dev/ttyAMA0/`.
 
 ## Resources
 * https://spellfoundry.com/2016/05/29/configuring-gpio-serial-port-raspbian-jessie-including-pi-3-4/
